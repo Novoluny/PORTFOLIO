@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Портфолио SLVT</title>
+  <meta name="description" content="Портфолио веб-разработчика: сайты и веб-приложения на HTML, CSS, JavaScript и Node.js.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header class="header">
+  <div class="container header__inner">
+    <a class="header__logo" href="#top" aria-label="На главную">SLVT<span>.</span></a>
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="#works">Работы</a></li>
+        <li><a class="nav__link" href="#pricing">Цены</a></li>
+        <li><a class="nav__link" href="#about">Обо мне</a></li>
+        <li><a class="nav__link" href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <a class="button button--outline button--sm header__button" href="#contacts">Написать</a>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <p class="hero__eyebrow">Веб-разработчик · Full-stack</p>
+      <h1 class="hero__title">Делаю сайты,<br>которые <em>работают.</em></h1>
+      <p class="hero__lead">Дизайн, вёрстка и логика: от идеи до готового сайта, которым удобно пользоваться.</p>
+      <div class="hero__actions">
+        <a class="button button--accent" href="#works">Смотреть работы</a>
+        <a class="button button--outline" href="#contacts">Написать мне</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- РАБОТЫ -->
+  <section class="section" id="works">
+    <div class="container">
+      <h2 class="section__title">Работы</h2>
+      <div class="cards">
+
+        <!-- ПРОЕКТ 1 -->
+        <article class="card">
+          <div class="card__media"><img src="./images/EXCLUSIVA.jpg" alt="Скриншот сайта барбершопа" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title">Барбершоп «EXCLUSIVA»</h3>
+            <p class="card__text">Сайт с онлайн-записью: выбор услуги, барбера и времени. Админ-панель с ролями и графиком работы.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Node.js</li><li>PostgreSQL</li></ul>
+            <div class="card__links">
+              <a class="button button--accent button--sm" href="https://novoluny.github.io/EXCLUSIVA/" target="_blank" rel="noopener">Демо ↗</a>
+              <a class="button button--outline button--sm" href="https://github.com/Novoluny/EXCLUSIVA.git" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ПРОЕКТ 2 -->
+        <article class="card">
+          <div class="card__media"><img src="./images/KINETIC.jpg" alt="Скриншот проекта" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title">Спортзал «KINETIC»</h3>
+            <p class="card__text">Сайт студии персональных тренировок: программы, тарифы с пересчётом цены, галерея и онлайн-запись на пробное занятие.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="card__links">
+              <a class="button button--accent button--sm" href="https://novoluny.github.io/KINETIC/" target="_blank" rel="noopener">Демо ↗</a>
+              <a class="button button--outline button--sm" href="https://github.com/Novoluny/KINETIC.git" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ПРОЕКТ 3 -->
+        <article class="card">
+          <div class="card__media"><img src="img/projects/project-3.jpg" alt="Скриншот проекта" loading="lazy"></div>
+          <div class="card__body">
+            <h3 class="card__title">Название проекта</h3>
+            <p class="card__text">Коротко: что делает проект и какую задачу решает.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="card__links">
+              <a class="button button--accent button--sm" href="#" target="_blank" rel="noopener">Демо ↗</a>
+              <a class="button button--outline button--sm" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- УСЛУГИ И ЦЕНЫ -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <h2 class="section__title">Услуги и цены</h2>
+      <div class="prices">
+
+        <article class="price-card">
+          <h3 class="price-card__title">Лендинг</h3>
+          <p class="price-card__text">Одна страница под конкретную услугу или предложение. Подойдёт, чтобы рассказать о себе, показать работы и принимать обращения.</p>
+          <p class="price-card__price"><span>от</span> 5&nbsp;000&nbsp;₽</p>
+          <p class="price-card__term">Срок: от 5 дней</p>
+          <a class="button button--outline" href="#contacts">Обсудить</a>
+        </article>
+
+        <article class="price-card">
+          <h3 class="price-card__title">Многостраничный сайт</h3>
+          <p class="price-card__text">Отдельные страницы под услуги. Подойдёт, когда бизнесу нужно рассказать о себе больше.</p>
+          <p class="price-card__price"><span>от</span> 10&nbsp;000&nbsp;₽</p>
+          <p class="price-card__term">Срок: от 10 дней</p>
+          <a class="button button--outline" href="#contacts">Обсудить</a>
+        </article>
+
+      </div>
+      <p class="prices__note">Точная стоимость зависит от задачи: напишите мне, и я посчитаю.</p>
+    </div>
+  </section>
+
+  <!-- КАК Я РАБОТАЮ -->
+  <section class="section" id="process">
+    <div class="container">
+      <h2 class="section__title">Как я работаю</h2>
+      <ul class="steps">
+        <li class="step">
+          <span class="step__number">01</span>
+          <h3 class="step__title">Обсуждаем задачу</h3>
+          <p class="step__text">Вы рассказываете, что нужно. Я задаю вопросы и называю точную цену и сроки.</p>
+        </li>
+        <li class="step">
+          <span class="step__number">02</span>
+          <h3 class="step__title">Делаю дизайн</h3>
+          <p class="step__text">Показываю, как будет выглядеть сайт, до начала разработки. Правки вносим на этом этапе.</p>
+        </li>
+        <li class="step">
+          <span class="step__number">03</span>
+          <h3 class="step__title">Разрабатываю</h3>
+          <p class="step__text">Верстаю, подключаю нужную логику и проверяю сайт на телефоне и компьютере.</p>
+        </li>
+        <li class="step">
+          <span class="step__number">04</span>
+          <h3 class="step__title">Запускаю и поддерживаю</h3>
+          <p class="step__text">Выкладываю сайт в сеть и помогаю с правками после запуска.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ОБО МНЕ -->
+  <section class="section" id="about">
+    <div class="container about">
+      <h2 class="section__title">Обо мне</h2>
+      <div>
+        <p class="about__text">Привет! Я Салават, веб-разработчик. Делаю сайты и веб-приложения под ключ: рисую дизайн, верстаю и программирую. Слежу за тем, чтобы интерфейсы были понятными, а код аккуратным.</p>
+        <ul class="tags tags--lg">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>Git</li><li>Figma</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- КОНТАКТЫ -->
+  <section class="section" id="contacts">
+    <div class="container">
+      <div class="contact-card">
+        <h2 class="contact-card__title">Давайте<br>работать вместе.</h2>
+        <p class="contact-card__text">Напишите мне, расскажите о задаче, и я отвечу в течение дня.</p>
+        <div class="contact-card__links">
+          <a class="button button--dark" href="https://t.me/tenskx" target="_blank" rel="noopener">Telegram ↗</a>
+          <a class="button button--dark" href="https://vk.ru/sulaevsalavat" target="_blank" rel="noopener">Вконтакте ↗</a>
+          <a class="button button--dark" href="https://wa.me/qr/TGDYU7ROYVW6D1" target="_blank" rel="noopener">Whatsapp ↗</a>
+          <a class="button button--dark" href="https://github.com/Novoluny" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ПОДВАЛ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>© <span id="year">2026</span> Салават</span>
+    <a href="#top">Наверх <span class="footer__arrow">↑</span></a>
+  </div>
+</footer>
+</body>
+</html>
